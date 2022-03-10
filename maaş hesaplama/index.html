@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>maaş hesaplama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form >
+      <label for="sayımass">Buraya Bürüt Maaşınızı Giriniz </label>
+      <input type="number" id="sayımass" value="">
+      <input type="button" value="hesapla" id="buton" onclick="hesaplama()">
+    </form>
+    <div class="vergi">
+        <h3 id="gelirvr"></h3>
+        <h3 id="sskvr"></h3>
+        <h3 id="damagavr"></h3>
+        <h3 id="issizkikvr"></h3> 
+        <h1 id="top"></h1>
+        <h1 id="netmass"></h1>
+    </div>
+    <script src="code.js"></script>
+</body>
+</html>
