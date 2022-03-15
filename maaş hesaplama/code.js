@@ -2,10 +2,10 @@ function hesaplama(){
     let sonuc
     let topvr
     let brt=document.getElementById("sayımass").value
-    let gelir= 0
-    let sgk=700
-    let damga=0
-    let issizkik=0
+    let gelir= 50.4
+    let sgk=700.1
+    let damga=47.6
+    let issizkik=50.7
     console.log(sonuc)
     sonuc=(Number(brt)-(gelir)-(sgk)-(damga)-(issizkik))
     topvr=(Number(gelir)+(sgk)+(damga)+(issizkik))
@@ -14,7 +14,8 @@ function hesaplama(){
     document.getElementById("damagavr").innerHTML="Damga Vergisi :"+damga
     document.getElementById("issizkikvr").innerHTML="İşsizlik Vergisi  :"+issizkik
     document.getElementById("netmass").innerHTML="Net  Maşını :" + sonuc.toFixed(2)
-    document.getElementById("top").innerHTML="Toplam Kesintiler :" + topvr
+    document.getElementById("top").innerHTML="Toplam Kesintiler :" + topvr.toFixed(2)
+    document.body.style.backgroundColor="yellow"
 
 
 
